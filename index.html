@@ -1,13 +1,29 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex - App Vanilla</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header class="application-header">
+      <h1 class="text-large text-secondary">Pokédex</h1>
+      <form class="form-container" id="search-form">
+        <div class="input-container">
+          <input type="search" id="search-input" placeholder="Digite o nome do pokemon...">
+          <button type="submit" class="btn btn-tertiary">Pesquisar</button>
+        </div>
+      </form>
+    </header>
+    <section>
+      <ul class="pokemon-list">
+        <div class="loader"></div>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
